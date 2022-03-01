@@ -4,7 +4,7 @@
             if (typeof num !== "number" || Number.isNaN(num))
                 throw new Error("The argument isn't a number");
         
-            if (num <= 0)
+            if (num < 1)
                 throw new Error("The number must be greater than or equal 1");
         
             return Math.round(num);
